@@ -1,6 +1,7 @@
 ---
 title: Welcome to the Ult Cookbook!
 ---
+![[Attachments/index.md_Attachments/Base Ult Terminology 1.png]]
 
 Welcome to the Ult Cookbook! This site acts as a mirror for our public repository hosted on GitHub.
 
@@ -8,7 +9,7 @@ This cookbook is intended to help upskill BONELAB modders in the world of UltEve
 
 ## Pre-Requisites
 
-- These docs *will* operate under the assumption that you have a Unity project setup with the latest [Marrow ExtendedSDK](https://github.com/notnotnotswipez/Marrow-ExtendedSDK-MAINTAINED) scripts - which extend the base SDK created by SLZ, and provides you with scripts they internally that aren't otherwise available for mod makers.
+- These docs *will* operate under the assumption that you have a Unity project setup with the latest [Marrow ExtendedSDK](https://github.com/notnotnotswipez/Marrow-ExtendedSDK-MAINTAINED) scripts - they extend the base SDK created by SLZ, and provides scripts they use internally that aren't otherwise available for mod makers.
 - Some basic programming knowledge is recommended - or knowledge of data-types and other terminology (strings, bools, floats, methods, etc...)
 
 ## Ready to Start?

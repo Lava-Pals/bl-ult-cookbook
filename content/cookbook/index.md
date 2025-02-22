@@ -1,3 +1,3 @@
 ---
-title: Cookbook
+title: 🧑‍🍳 Cookbook
 ---
