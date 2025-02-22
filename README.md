@@ -1,3 +1,3 @@
 # BONELAB Ult Cookbook
 
-Cookbook for making logic for BONELAB. WIP.
+*under heavy construction and experimentation :P*
