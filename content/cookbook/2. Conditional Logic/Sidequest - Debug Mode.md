@@ -10,20 +10,26 @@ You can reveal this at any time by switching to Debug mode:
 Every call and argument in your event has a number that represents its position in the **Inspector**.
 
 ![[Attachments/Sidequest - Debug Mode.md_Attachments/Sidequest - Debug Mode-20250222192542360.png]]
+
 You can hopefully see how these numbers map across in **Debug** mode:
+
 ![[Attachments/Sidequest - Debug Mode.md_Attachments/Sidequest - Debug Mode-20250222192549526.png]]
+
 To edit calls in debug mode, you may want to look at these numbers, or look for the matching 'Method Name'.
 ## Use Cases - Forcing Return Values (THE RED)
 
 Sometimes, we switch to Debug to overcome limitations of UltEvent's custom inspector.
 
 In this example, we want to get a Rigidbody and change the connected body on a configurable joint:
+
 ![[Attachments/Sidequest - Debug Mode.md_Attachments/Sidequest - Debug Mode-20250222193135640.png]]
 
 The UltEvent editor doesn't let use use a return value here. That's because [GetComponent](https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.GetComponent.html) can return **any type of Component**, this includes Rigidbodies, but it could also give us **any other type of component** (Transforms, Colliders, MeshRenderers, etc...)
 
 Debug mode can be used to forcefully use a return value:
+
 ![[Attachments/Sidequest - Debug Mode.md_Attachments/Forcing Return Values.gif]]
+
 *I locate the call for set_connectedBody, and change it from using an Object to using the 1st return value.*
 
 This causes the argument to show up as red but will still work perfectly.
@@ -33,6 +39,7 @@ This causes the argument to show up as red but will still work perfectly.
 Sometimes the UltEvent inspector will force us to use return values. This can be overcome again by using Debug mode:
 
 ![[Attachments/2.1 Create Conditional Statements.md_Attachments/Active Based on Name 1.mp4]]
+
 *Here, the inspector window forces us to use a return value for the 2nd argument object.Equals, when we want to use a string. Overcame by switching the type from 'Return Value' to 'String' in debug mode.*
 ### Full Breakdown
 1. I select [`Object.name`](https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object-name.html) - and switch the mode to get instead of set.
